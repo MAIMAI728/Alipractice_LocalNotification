@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             notificationId = 0;
 
         //get notify
-        notificationManager.notify(notificationId,notification);
+        notificationManager.notify(notificationId, notification);
     }
 
 
@@ -178,10 +178,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         PendingIntent pendingIntentNo = PendingIntent.getActivity(this, 1, answerIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         notificationBuilder.addAction(R.drawable.thumbs_down, "No", pendingIntentNo);
 
+
         sendNotification();
 
     }
-
 
     /////////////////////////////////////////////////////////////////////
 
@@ -199,6 +199,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // ---Use for notifications that you want the user to be informed about, but that are less urgent.
     // PRIORITY_MIN
     // ---Use for contextual or background information notifications.
+
     private void setDataForMaxPriorityNotification() {
         notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
