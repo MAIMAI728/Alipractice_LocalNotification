@@ -3,8 +3,8 @@
 
 I didn't lecture about "changing priority of Notification" and "combinating Notification" at my presentation. Please follow with "//★add" of my code if you took my WS.
 
-I changed :
-MainActivity.java
+I changed :  
+MainActivity.java  
 activity_main.xml (just uncomment)
 
 
