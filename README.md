@@ -5,7 +5,8 @@ Check point:
 Please check sendNotification（） of MainActivity.java  
 In this method I have defined Intent and PendingIntent object to redirect user to some activity when user touches the notification.
 
-```private void sendNotification() {
+```
+private void sendNotification() {
       Intent notificationIntent = new Intent(this, MainActivity.class);
       PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
       notificationBuilder.setContentIntent(contentIntent);
@@ -18,6 +19,7 @@ In this method I have defined Intent and PendingIntent object to redirect user t
           notificationId = 0;
       notificationManager.notify(notificationId, notification);
   }
+  
 ```
 To assign some action when user touches the notification, I need to set PendingIntent object in `notificationBuilder.setContentIntent() method`.
 
