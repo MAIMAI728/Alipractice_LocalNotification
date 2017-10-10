@@ -45,18 +45,59 @@ activity_main.xml (just uncomment)
 
 ## Demo
 
-★Simple Notification
-
+★Simple Notification  
+```
+private void setDataForSimpleNotification() {
+        notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(icon)
+                .setContentTitle(notificationTitle)
+                .setContentText(notificationText);
+        sendNotification();
+    }
+```
 ![result](https://github.com/MAIMAI728/Alipractice_LocalNotification/blob/master/images/simpleNotification.gif)
 
 
-★Expand Layout Notification
+★Expand Layout Notification  
+```
+private void setDataForExpandLayoutNotification() {
+        notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(icon)
+                .setContentTitle(notificationTitle)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(notificationText))
+                .setContentText(notificationText);
 
+        sendNotification();
+    }
+```
 ![result](https://github.com/MAIMAI728/Alipractice_LocalNotification/blob/master/images/ExpandLayoutNotification.gif)
 
 
-★Notification With Action Button Notification
+★Notification With Action Button Notification  
+[!] Not recommended to use a device with wigh API(25 or 26) for checking icon images(thumbs_up, thumb_down). It looks easy to see with 22 API.  
+```
+private void setDataForNotificationWithActionButton() {
 
+        notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(icon)
+                .setContentTitle(notificationTitle)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(notificationText))
+                .setContentText(notificationText);
+
+        Intent answerIntent = new Intent(this, AnswerReceiveActivity.class);
+        answerIntent.setAction("Yes");
+        PendingIntent pendingIntentYes = PendingIntent.getActivity(this, 1, answerIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        notificationBuilder.addAction(R.drawable.thumbs_up, "Yes", pendingIntentYes);
+
+        answerIntent.setAction("No");
+        PendingIntent pendingIntentNo = PendingIntent.getActivity(this, 1, answerIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        notificationBuilder.addAction(R.drawable.thumbs_down, "No", pendingIntentNo);
+        sendNotification();
+    }
+```
 ![result](https://github.com/MAIMAI728/Alipractice_LocalNotification/blob/master/images/actionNotification.gif)
 
 
