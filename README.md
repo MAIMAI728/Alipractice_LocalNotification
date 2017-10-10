@@ -26,7 +26,7 @@ To assign some action when user touches the notification, I need to set PendingI
 --------------------------------------------------------------------------------
 References:  
 
-☆PendingIntent  
+☆PendingIntent  
 https://developer.android.com/reference/android/app/PendingIntent.html
 
 ☆NotificationCompat.Builder  
