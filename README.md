@@ -80,9 +80,9 @@ private void setDataForMaxPriorityNotification() {
 ![result](https://github.com/MAIMAI728/Alipractice_LocalNotification/blob/master/images/MaxPriority.gif)
 
 
-★[New] Min Priority Notification
-PRIORITY_MIN
----Use for contextual or background information notifications.
+★[New] Min Priority Notification  
+PRIORITY_MIN  
+---Use for contextual or background information notifications.  
 
 ```
 private void setDataForMinPriorityNotification() {
@@ -103,13 +103,12 @@ private void setDataForMinPriorityNotification() {
 References:  
 
 ☆Notification.BigTextStyle  
+https://developer.android.com/reference/android/app/Notification.BigTextStyle.html  
 
-https://developer.android.com/reference/android/app/Notification.BigTextStyle.html
 --------------------------------------------------------------------------------
 
-
-★[New] Combination Notification
-When you see the simple notification, you can see "Title" and when you tap to see detail then you can see "detail Text" on the top!
+★[New] Combination Notification  
+When you see the simple notification, you can see "Title" and when you tap to see detail then you can see "detail Text" on the top!  
 
 ```
 private void setDataForCombinedNotification() {
