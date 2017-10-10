@@ -29,7 +29,7 @@ References:  
 ☆PendingIntent  
 https://developer.android.com/reference/android/app/PendingIntent.html
 
-☆NotificationCompat.Builder   
+☆NotificationCompat.Builder  
 https://developer.android.com/reference/android/support/v4/app/NotificationCompat.Builder.html
 
 --------------------------------------------------------------------------------
@@ -98,6 +98,14 @@ private void setDataForMinPriorityNotification() {
     }
 ```
 ![result](https://github.com/MAIMAI728/Alipractice_LocalNotification/blob/master/images/MinPriority.gif)
+
+--------------------------------------------------------------------------------
+References:  
+
+☆Notification.BigTextStyle  
+
+https://developer.android.com/reference/android/app/Notification.BigTextStyle.html
+--------------------------------------------------------------------------------
 
 
 ★[New] Combination Notification
