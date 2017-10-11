@@ -76,7 +76,7 @@ private void setDataForExpandLayoutNotification() {
 
 
 ★Notification With Action Button Notification  
-[!] Not recommended to use a device with wigh API(25 or 26) for checking icon images(thumbs_up, thumb_down). It looks easy to see with 22 API.  
+[!] Not recommended to use a device with high level API(25 or 26) for checking icon images(thumbs_up, thumb_down). It looks easy to see with 22 API.  
 ```
 private void setDataForNotificationWithActionButton() {
 
